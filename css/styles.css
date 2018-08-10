@@ -1,0 +1,424 @@
+/***************
+nav
+****************/
+
+nav {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(11, 176, 182);
+}
+
+.selected {
+    background-color: rgb(11, 176, 182);
+}
+
+.hamburger {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    display: none;
+}
+
+.ham1 {
+    width: 50px;
+    height: 5px;
+    background-color: grey;
+    margin: 5px 0;
+}
+
+.ham2 {
+    width: 50px;
+    height: 5px;
+    background-color: grey;
+    margin: 5px 0;
+}
+
+.ham3 {
+    width: 50px;
+    height: 5px;
+    background-color: grey;
+    margin: 5px 0;
+}
+
+
+/***************
+hero 
+****************/
+
+.hero-image {
+    background-image: url("../img/zacatecas.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.white-down-arrow {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.arrow-container {
+    top: 80%;
+    width: 100%;
+    position: absolute;
+}
+
+.hero-header {
+    font-size: 3.4rem;
+    color:  rgb(11, 176, 182);
+    text-shadow: 1px 4px 10px black;
+    line-height: 3rem;
+}
+
+/***************
+body
+****************/
+
+body {
+    text-align: center;
+    font-family: 'Changa', sans-serif;
+    line-height: 1.5rem;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+main {
+    min-height: calc(100vh - 140px);
+}
+
+h1 {
+    margin-top: 60px;
+    padding-top: 10px;
+    color: rgb(11, 176, 182);
+    font-size: 2.5rem;
+}
+
+p {
+    text-align: center;
+    max-width: 50%;
+    margin: 0 25%;
+}
+
+li {
+    list-style: none;
+}
+
+hr {
+    width: 60%;
+} 
+
+img {
+    object-fit: cover;
+}
+
+/***************
+Biography
+****************/
+
+.derik {
+    border-radius: 100%;
+}
+
+.wrapper .derik {
+    width: 35%;
+}
+
+/***************
+Resume
+****************/
+
+
+.resume-headers {
+    width: 80%;
+    background-color: rgb(11, 176, 182);
+    margin: 5% auto;
+    padding: 10px;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.experience-containers {
+    width: 50%;
+}
+
+.education-container {
+    width: 80%;
+    margin: 5% auto;
+}
+
+
+.work-skills-bullets li {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.experience-container h3 {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+/***************
+Contact
+****************/
+
+label {
+    display: block;
+}
+
+.right-contact {
+    margin: 50px 0;
+}
+
+.mail-contact a {
+    background-image: url("../img/mail.png");
+    min-height: 25px;
+    background-size: 25px;
+    padding: 0 0 0 30px;
+    margin: 10px 0;
+    background-repeat: no-repeat;
+    color: rgb(11, 176, 182);
+}
+
+.phone-contact a {
+    background-image: url("../img/phone.png");
+    min-height: 25px;
+    background-size: 25px;
+    padding: 0 0 0 30px;
+    margin: 10px 0;
+    background-repeat: no-repeat;
+    color: rgb(11, 176, 182);
+}
+
+.phone-contact {
+    display: block;
+}
+
+.mail-contact, .phone-contact {
+    text-align: left;
+    margin: 10px;
+}
+
+.centering-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-area {
+    width: 50%;
+    margin: 0 auto;
+}
+
+textarea, input:focus { 
+    outline-color: rgb(11, 176, 182);
+}
+
+/***************
+Gallery
+****************/
+
+
+.photos-small-container {
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    justify-content: space-around;
+    flex-direction: row;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, .5);
+    background-color: rgb(11, 176, 182);
+    color: white;
+}
+
+.wrapper figure {
+    width: 33.333333%;
+    text-align: center;
+    border-left: 1px solid white;
+}
+
+.wrapper figure:nth-of-type(1) {
+    border-left: none;
+}
+
+
+.wrapper img {
+    width: 100%;
+    height: 300px;
+}
+
+figcaption {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/***************
+Github
+****************/
+
+.wrapper .work-containers {
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, .5);
+    background-color: rgb(11, 176, 182);
+    color: white;
+}
+
+.my-work {
+    width: 80%;
+}
+
+/***************
+footer
+****************/
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+} 
+
+/***************
+Media Queries
+****************/
+
+@media (max-width: 600px) {
+    .photos-small-container {
+        flex-wrap: wrap;
+        flex-basis: 300px;
+    }
+    
+    nav {
+        height: 50px;
+        background-color: black;
+    }
+    
+    .main-nav {
+        display: none;
+    } 
+
+    .hamburger {
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .right-contact {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    .photos-small-container {
+        display: block;
+    }
+
+    .photos-small-container figure {
+        width: 100%;
+    }
+
+    .centering-contact {
+        display: block;
+    }
+
+    .experience-containers {
+        display: block;
+        width: 100%;
+    }
+
+    .wrapper .derik {
+        width: 70%;
+    }
+
+    .text-area {
+        width: 70%;
+    }
+
+    .main-nav .selected {
+        background-color: none;
+    }
+
+    .hidden-nav .selected {
+        background-color: rgb(11, 176, 182);
+    }
+
+    .hidden-nav {
+        top: 50px;
+        display: block;
+        height: 100vh;
+        position: fixed;
+        width: 100vw;
+        left: -100vw;
+    }
+
+    .open {
+        left: 0;
+    }
+    
+    .hidden-nav-list {
+        height: 100vh;
+        color: white;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .hidden-nav-list a {
+        color: white;
+    }
+}
+
