@@ -12,7 +12,8 @@ openHamburger.addEventListener('click', function() {
 
 // form validation 
 
-const contactForm = document.forms["big-form"];
+var contactForm = document.forms["big-form"];
+
 contactForm.onsubmit = e => {
     // e.preventDefault();
     // console.log('the event is - ', e);
@@ -20,22 +21,18 @@ contactForm.onsubmit = e => {
 }
 
 function formValidator(e) {
-    console.log(e);
-    const form = document.forms["big-form"];
-
-
     let theFields = ['first-name', 'last-name', 'email'];
     let theArr = [];
     for (let i = 0; i < theFields.length; i++) {
         theArr.push({
-            name: form[theFields[i]].name,
-            val: form[theFields[i]].value
+            na: contactForm[theFields[i]].name,
+            val: contactForm[theFields[i]].value
         });
-    }
+    };
  
     for (let i = 0; i < theArr.length ; i++) {
         if (theArr[i].val === "") {
-            alert(`${theArr[i].name} must be filled out`);
+            alert(`${theArr[i].na} must be filled out`);
             e.preventDefault();
         } 
     }
